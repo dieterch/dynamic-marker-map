@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/dynamic-marker-map",
+	"version": "0.1.0",
+	"title": "Dynamic Marker Map",
+	"category": "widgets",
+	"icon": "location",
+	"description": "Create an Image Map with configurable Markers.",
+	"example": {},
+	"attributes": {
+        "mapImageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "markerIconUrl": {
+            "type": "string",
+            "default": "http://localhost:8888/wp-content/uploads/2025/01/Marker2.png"
+        },
+        "locations": {
+            "type": "array",
+            "default": []
+        }
+    },
+	"supports": {
+		"align": true,
+		"html": false,
+		"spacing": {
+			"padding": true
+		}
+	},
+	"textdomain": "dynamic-marker-map",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

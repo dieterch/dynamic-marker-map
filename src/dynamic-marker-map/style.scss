@@ -1,0 +1,64 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ /*
+.wp-block-create-block-dynamic-marker-map {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+*/
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .marker {
+        position: absolute;
+		display: block;
+        width: 24px;
+        height: 24px;
+		opacity: 0.7;
+        cursor: pointer;
+        transform: translate(-50%, -70%);
+        background-size: cover;
+		// background-position: center;
+    	text-decoration: none; /* Remove underline */
+
+		.tooltip {
+			position: absolute;
+			top: -30px; /* Adjust to place the tooltip above the marker */
+			left: 50%; /* Center the tooltip horizontally */
+			transform: translateX(-50%);
+			white-space: nowrap; /* Keep tooltip text on a single line */
+			background-color: rgba(0, 0, 0, 0.8); /* Background color for tooltip */
+			color: white;
+			padding: 5px 10px;
+			border-radius: 4px;
+			z-index: 999; /* Ensure tooltips appear above other elements */
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.2s ease-in-out;
+			font-size: 14px;
+		}
+
+        &:hover .tooltip {
+			visibility: visible;
+			opacity: 1;
+        }
+    }
+}
+/**/
+
+

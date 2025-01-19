@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ /*
+.wp-block-create-block-dynamic-marker-map {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+*/
+
+/*
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .marker {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+		opacity: 0.5;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+
+        .tooltip {
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        &:hover .tooltip {
+            display: block;
+        }
+    }
+}
+
+/**/
