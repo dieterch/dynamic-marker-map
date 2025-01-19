@@ -26,39 +26,40 @@
 
     .marker {
         position: absolute;
-		display: block;
+        display: block;
         width: 24px;
         height: 24px;
-		opacity: 0.7;
+        opacity: 0.7;
         cursor: pointer;
         transform: translate(-50%, -55%);
         background-size: cover;
-		// background-position: center;
-    	text-decoration: none; /* Remove underline */
+        text-decoration: none; /* Remove underline */
 
-		.tooltip {
-			position: absolute;
-			top: -30px; /* Adjust to place the tooltip above the marker */
-			left: 50%; /* Center the tooltip horizontally */
-			transform: translateX(-50%);
-			white-space: nowrap; /* Keep tooltip text on a single line */
-			background-color: rgba(0, 0, 0, 0.8); /* Background color for tooltip */
-			color: white;
-			padding: 5px 10px;
-			border-radius: 4px;
-			z-index: 999; /* Ensure tooltips appear above other elements */
-			visibility: hidden;
-			opacity: 0;
-			transition: opacity 0.2s ease-in-out;
-			font-size: 14px;
-		}
+        .tooltip {
+            position: absolute;
+            top: -40px; /* Adjust to move the tooltip further above */
+            left: 50%; /* Center the tooltip horizontally */
+            transform: translateX(-50%);
+            white-space: nowrap; /* Keep tooltip text on a single line */
+            background-color: rgba(0, 0, 0, 0.8); /* Background color for tooltip */
+            color: white;
+            padding: 8px 12px; /* Increase padding for better visibility */
+            border-radius: 4px;
+            z-index: 999; /* Ensure tooltips appear above other elements */
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            font-size: 14px;
+            line-height: 1.4; /* Ensure enough space for multi-line text */
+            overflow: visible; /* Prevent content from being clipped */
+        }
 
         &:hover .tooltip {
-			visibility: visible;
-			opacity: 1;
+            visibility: visible;
+            opacity: 1;
         }
     }
 }
-/**/
+
 
 
