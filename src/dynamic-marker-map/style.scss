@@ -13,6 +13,7 @@
 }
 */
 
+
 .map-container {
     position: relative;
     width: 100%;
@@ -27,11 +28,15 @@
     .marker {
         position: absolute;
         display: block;
-        width: 24px;
-        height: 24px;
+        width: 2vw; /* Adjust size relative to viewport width */
+        height: 2vw; /* Keep aspect ratio */
+        max-width: 30px; /* Prevent marker from becoming too large */
+        max-height: 30px;
+        min-width: 18px; /* Prevent marker from becoming too small */
+        min-height: 18px;
         opacity: 0.7;
         cursor: pointer;
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -60%);
         background-size: cover;
         text-decoration: none; /* Remove underline */
 
@@ -61,5 +66,10 @@
     }
 }
 
-
-
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .marker {
+        width: 6vw; /* Adjust marker size for smaller screens */
+        height: 6vw;
+    }
+}
